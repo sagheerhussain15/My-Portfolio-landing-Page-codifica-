@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFDFdKD9dAOniLZXgDxsLnLbxm7ymPpwbf2A&s" alt="Logo">
+            </a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <section id="home" class="home-section">
+        <div class="content">
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <p class="hero-subtitle">Creative Designer | Web Developer | Innovator</p>
+            <a href="#about" class="cta-btn">Learn More</a>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape4"></div>
+        </div>
+    </section>
+    <section id="about" class="about-section scroll-section">
+        <div class="container">
+
+            <div class="about-img">
+                <img src="/sagheer.jpg" alt="Profile Picture">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Sagheer Hussain, a passionate web developer and creative designer with over 3 months of experience in building modern, responsive websites. My mission is to create digital experiences that help brands grow and engage with their audience.
+                </p>
+                
+                <div class="skills">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-pencil-alt"></i>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <p>Graphic Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="gallery" class="scroll-section">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkyyDfzsQd2V1SPiMPl0ZcrHx9r2MEbx14tQ&s" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/free-vector/flat-design-colored-portfolio-template_23-2149215470.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://media.istockphoto.com/id/1453953453/photo/strategy-of-diversified-investment.jpg?s=612x612&w=0&k=20&c=GdKGA5EuK0QfKm76ExjkK64iPZLuTUOyIDQlXs-ZRQM=" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVKmBq01L4J_SqWFeNlht01U7a8_oHsGeQGg&s" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVKmBq01L4J_SqWFeNlht01U7a8_oHsGeQGg&s" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2sG0Vbwc3kHfKqdm0mGqonkWZMvX8UqHEmw&s" alt="Image 6">
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-form">
+            <form id="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name" class="form-label">Name</label>
+                </div>
+    
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email" class="form-label">Email</label>
+                </div>
+    
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message" class="form-label">Message</label>
+                </div>
+    
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>    
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
